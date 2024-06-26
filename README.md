@@ -5,7 +5,10 @@
 
 ## Docker
 
-(Let me know if you want this)
+```bash
+make docker_build
+make docker_run
+```
 
 # Implementation Notes
 
