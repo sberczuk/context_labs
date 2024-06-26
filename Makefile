@@ -3,7 +3,7 @@
 docker_build:
 	docker build -t context_labs .
 
-docker_run: docker_build
+docker_run:
 	docker run  context_labs
 
 # The dependency check isn't working here.
