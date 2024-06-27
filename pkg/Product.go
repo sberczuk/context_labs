@@ -40,6 +40,7 @@ func (p *Product) Score(rules []Rule) {
 func (p *Product) AddAttribute(a Attribute) {
 	//this isn't type safe as is, but we could add a function to convert in an error safe way
 	// there is also a go-enum tool that will bgenerate the code, but I'm ommitting the for brevity
+	// given that the Attributes are parameterized,  this seems reasonably safe for a prototype
 	p.attribMap[AttribName(a.GetName())] = a
 }
 
